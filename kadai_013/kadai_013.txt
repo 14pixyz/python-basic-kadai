@@ -1,0 +1,11 @@
+# 関数
+def result(price, tax):
+    total = price * (1 + tax)
+    print(f"{total}円です")
+
+# 値の設定
+price = 1000
+tax = 0.1
+
+# 関数の呼び出し
+result(price, tax)
