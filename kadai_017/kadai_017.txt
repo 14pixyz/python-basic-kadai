@@ -1,0 +1,25 @@
+# クラスの定義
+class Human():
+    # メソッドの定義
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def check_adult(self):
+        if self.age >= 20:
+            print(f"{self.name}は大人である")
+        else:
+            print(f"{self.name}は大人ではない")
+
+# インスタンス化
+human1 = Human("太郎", 30)
+human2 = Human("二郎", 25)
+human3 = Human("三郎", 20)
+human4 = Human("四郎", 18)
+
+# インスタンスをリストに格納
+human_list = [human1, human2, human3, human4]
+
+# メソッドの実行
+for human in human_list:
+      human.check_adult()
