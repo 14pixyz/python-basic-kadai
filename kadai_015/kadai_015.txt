@@ -1,15 +1,15 @@
+#  クラス定義
 class Human:
-    def __init__(self):
-        self.name = ""
-        self.age = ""
-
     # メソッドを定義する
-    def printinfo(self, name, age):
+    def __init__(self, name, age):
         self.name = name
         self.age = age
+
+    def printinfo(self):
         print("名前:" + self.name + "  " + "年齢:" + str(self.age))
 
 # インスタンス化する
-human = Human()
+human = Human("太郎", 30)
 
-human.printinfo("太郎", 30)
+#メソッドの実行
+human.printinfo()
