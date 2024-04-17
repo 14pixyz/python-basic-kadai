@@ -1,8 +1,11 @@
-price1 = 100
-price2 = 200
-tax = 1.1
+# 関数
+def result(price, tax):
+    total = price * (1 + tax)
+    return total
 
-def total():
-    return price1 + price2
+# 値の設定
+price = 1000
+tax = 0.1
 
-print (total() * tax)
+# 関数の呼び出し
+result(price, tax)
